@@ -16,9 +16,12 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '11' # or required version
+           java-version: 11
+           distribution: 'temurin'
+           server-password: ${{ secrets.GITHUB_TOKEN }}
+    
 
-      - name: Configure Maven settings
+      - name: Configure Maven settings 
         run: |
           mkdir -p ~/.m2
           echo "<settings><servers><server><id>snapshots</id><username>${{ secrets.ARTIFACTORY_USERNAME }}</username><password>${{ secrets.ARTIFACTORY_PASSWORD }}</password></server></servers></settings>" > ~/.m2/settings.xml
