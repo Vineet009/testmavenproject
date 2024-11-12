@@ -38,6 +38,7 @@ jobs:
                   --repo-resolve-releases mvn-project-libs-release \
                   --repo-resolve-snapshots mvn-project-libs-snapshot \
                   --repo-deploy-releases mvn-project-libs-release \
+                  --url ${{ secrets.ARTIFACTORY_URL }} \
                   --repo-deploy-snapshots mvn-project-libs-snapshot
         env:
          JFROG_USER: ${{ secrets.ARTIFACTORY_USERNAME }}
