@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Maven deploy
         run: |
-          jfrog rt mvn "clean deploy -f pom.xml" "your-maven-repo" --server-id-resolve snapshots
+          jfrog rt mvn "clean deploy -f pom.xml" "mvn-project-libs-release" --server-id-resolve snapshots
         env:
           JFROG_USER: ${{ secrets.ARTIFACTORY_USERNAME }}
           JFROG_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
