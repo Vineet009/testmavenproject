@@ -31,10 +31,12 @@ jobs:
         with:
           version: 'latest'
 
-      - name: Run Maven deploy
+      - name: Run Maven config
         run: |
-          jfrog rt mvn "clean deploy -f pom.xml" "mvn-project-libs-release" --server-id-resolve snapshots
+          jf mvn-config --server-id-resolve snapshots --repo-resolve mvn-project-libs-snapshot --repo-deploy mvn-project-libs-snapshot
         env:
           JFROG_USER: ${{ secrets.ARTIFACTORY_USERNAME }}
           JFROG_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
           JFROG_URL: ${{ secrets.ARTIFACTORY_URL }}
+      - name: Run Maven deploy
+         run: jf mvn clean deploy -f pom.xml
