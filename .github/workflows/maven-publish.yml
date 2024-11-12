@@ -39,10 +39,11 @@ jobs:
                   --repo-resolve-snapshots mvn-project-libs-snapshot \
                   --repo-deploy-releases mvn-project-libs-release \
                   --repo-deploy-snapshots mvn-project-libs-snapshot
-  env:
-    JFROG_USER: ${{ secrets.ARTIFACTORY_USERNAME }}
-    JFROG_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
-    JFROG_URL: ${{ secrets.ARTIFACTORY_URL }}
+        env:
+         JFROG_USER: ${{ secrets.ARTIFACTORY_USERNAME }}
+         JFROG_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+         JFROG_URL: ${{ secrets.ARTIFACTORY_URL }}
+         
       - name: Run Maven deploy
         run: |
           jf mvn clean deploy -f pom.xml
