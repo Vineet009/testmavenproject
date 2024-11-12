@@ -39,5 +39,5 @@ jobs:
           JFROG_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
           JFROG_URL: ${{ secrets.ARTIFACTORY_URL }}
       - name: Run Maven deploy
-         run: |
-           jf mvn clean deploy -f pom.xml
+        run: |
+          jf mvn clean deploy -f pom.xml
