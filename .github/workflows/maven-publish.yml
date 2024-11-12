@@ -1,8 +1,9 @@
-name: CI springboot application
+name: CI spring boot application
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
