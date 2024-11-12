@@ -26,11 +26,15 @@ jobs:
           mkdir -p ~/.m2
           echo "<settings><servers><server><id>snapshots</id><username>${{ secrets.ARTIFACTORY_USERNAME }}</username><password>${{ secrets.ARTIFACTORY_PASSWORD }}</password></server></servers></settings>" > ~/.m2/settings.xml
 
-      - name: Build and deploy to Artifactory
+      - name: setup a JFrog
         uses: jfrog/setup-jfrog-cli@v2
         with:
           version: 'latest'
-
+          
+      - name: Set up JFrog CLI
+        run: |
+          jfrog c add --url ${{ secrets.ARTIFACTORY_URL }} --user ${{ secrets.ARTIFACTORY_USERNAME }} --password ${{ secrets.ARTIFACTORY_PASSWORD }} --server-id snapshots
+      
       - name: Configure Maven for Artifactory
         run: |
           jf mvn-config --server-id-resolve snapshots \
@@ -38,7 +42,6 @@ jobs:
                   --repo-resolve-releases mvn-project-libs-release \
                   --repo-resolve-snapshots mvn-project-libs-snapshot \
                   --repo-deploy-releases mvn-project-libs-release \
-                  --url ${{ secrets.ARTIFACTORY_URL }} \
                   --repo-deploy-snapshots mvn-project-libs-snapshot
         env:
          JFROG_USER: ${{ secrets.ARTIFACTORY_USERNAME }}
