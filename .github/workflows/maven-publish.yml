@@ -33,7 +33,7 @@ jobs:
           
       - name: Set up JFrog CLI
         run: |
-          jfrog c add --url ${{ secrets.ARTIFACTORY_URL }} --server-id snapshots
+          jfrog c add --url ${{ secrets.ARTIFACTORY_URL }} --access-token ${{ secrets.ARTIFACTORY_PASSWORD }} --server-id snapshots
       
       - name: Configure Maven for Artifactory
         run: |
