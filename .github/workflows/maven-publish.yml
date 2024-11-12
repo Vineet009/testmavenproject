@@ -30,10 +30,6 @@ jobs:
         uses: jfrog/setup-jfrog-cli@v2
         with:
           version: 'latest'
-          
-      - name: Set up JFrog CLI
-        run: |
-          jfrog c add --url ${{ secrets.ARTIFACTORY_URL }} --access-token ${{ secrets.ARTIFACTORY_PASSWORD }} --server-id snapshots
 
       - name: Configure Maven for Artifactory
         run: |
