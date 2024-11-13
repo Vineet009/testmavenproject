@@ -2,12 +2,12 @@
 <servers>
 <server>
 <username>dreamervineet@gmail.com</username>
-<password>${secret.ARTIFCATORY_PASSWORD}</password>
+<password>${env.ARTIFCATORY_PASSWORD}</password>
 <id>central</id>
 </server>
 <server>
 <username>dreamervineet@gmail.com</username>
-<password>${secret.ARTIFCATORY_PASSWORD}</password>
+<password>${env.ARTIFCATORY_PASSWORD}</password>
 <id>snapshots</id>
 </server>
 </servers>
