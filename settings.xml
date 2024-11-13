@@ -25,8 +25,8 @@
 <repository>
 <snapshots/>
 <id>snapshots</id>
-<name>mvn-project-libs-snapshot</name>
-<url>https://testcicdvineet.jfrog.io/artifactory/mvn-project-libs-snapshot</url>
+<name>mvn-project-libs-release</name>
+<url>https://testcicdvineet.jfrog.io/artifactory/mvn-project-libs-release</url>
 </repository>
 </repositories>
 <pluginRepositories>
@@ -41,8 +41,8 @@
 <pluginRepository>
 <snapshots/>
 <id>snapshots</id>
-<name>mvn-project-libs-snapshot</name>
-<url>https://testcicdvineet.jfrog.io/artifactory/mvn-project-libs-snapshot</url>
+<name>mvn-project-libs-release</name>
+<url>https://testcicdvineet.jfrog.io/artifactory/mvn-project-libs-release</url>
 </pluginRepository>
 </pluginRepositories>
 <id>artifactory</id>
