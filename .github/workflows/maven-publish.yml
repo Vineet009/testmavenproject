@@ -1,9 +1,9 @@
-name: Maven Deploy to Artifactory
+name: Maven Deploy to Artifactory - TO BE DELETED
 
 on:
   push:
     branches:
-      - master
+      - master1
 
 jobs:
   build:
