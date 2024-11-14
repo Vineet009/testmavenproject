@@ -4,12 +4,12 @@
   <servers>
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>${{ARTIFACTORY_PASSWORD}}</password>
+      <password>${{secret.ARTIFACTORY_PASSWORD}}</password>
       <id>central</id>
     </server>
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>${{ARTIFACTORY_PASSWORD}}</password>
+      <password>${{secret.ARTIFACTORY_PASSWORD}}</password>
       <id>snapshots</id>
     </server>
   </servers>
