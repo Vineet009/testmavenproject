@@ -5,16 +5,16 @@
     <server>
       <id>https://testcicdvineet.jfrog.io</id>
       <username>dreamervineet@gmail.com</username>
-      <password>${{secret.ARTIFACTORY_PASSWORD}}</password>
+      <password>${{ secrets.ARTIFACTORY_PASSWORD }}</password>
     </server>  
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>${{secret.ARTIFACTORY_PASSWORD}}</password>
+      <password>${{ secrets.ARTIFACTORY_PASSWORD }}</password>
       <id>central</id>
     </server>
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>${{secret.ARTIFACTORY_PASSWORD}}</password>
+      <password>${{ secrets.ARTIFACTORY_PASSWORD }}</password>
       <id>snapshots</id>
     </server>
   </servers>
