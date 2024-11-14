@@ -3,18 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <id>https://testcicdvineet.jfrog.io</id>
       <username>dreamervineet@gmail.com</username>
-      <password>cmVmdGtuOjAxOjE3NjMxMzU1NjI6aVQ3YTFJMnhJVnU3dEJLVnNxMnBBbXN0dE5w</password>
-    </server>  
-    <server>
-      <username>dreamervineet@gmail.com</username>
-      <password>cmVmdGtuOjAxOjE3NjMxMzU1NjI6aVQ3YTFJMnhJVnU3dEJLVnNxMnBBbXN0dE5w</password>
+      <password>cmVmdGtuOjAxOjE3NjMxMzY0NDA6MUZxS2c2cVBuUmxscDRVbmdVRGhWRmJZTlVz</password>
       <id>central</id>
     </server>
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>cmVmdGtuOjAxOjE3NjMxMzU1NjI6aVQ3YTFJMnhJVnU3dEJLVnNxMnBBbXN0dE5w</password>
+      <password>cmVmdGtuOjAxOjE3NjMxMzY0NDA6MUZxS2c2cVBuUmxscDRVbmdVRGhWRmJZTlVz</password>
       <id>snapshots</id>
     </server>
   </servers>
