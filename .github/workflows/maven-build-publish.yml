@@ -36,6 +36,7 @@ jobs:
     - name: Set Environment Variable
       run: | 
         echo "ARTIFACTORY_PASSWORD=${{ secrets.ARTIFACTORY_PASSWORD }}" >> $GITHUB_ENV
+        curl -u dreamervineet@gmail.com:${{ secrets.ARTIFACTORY_PASSWORD }} https://testcicdvineet.jfrog.io/artifactory/api/storage/mvn-project-libs-snapshot/com/mt/maven-web-application
         
     - name: Build with Maven
       run: mvn -B package --file pom.xml
