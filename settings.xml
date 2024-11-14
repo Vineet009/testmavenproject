@@ -5,16 +5,16 @@
     <server>
       <id>https://testcicdvineet.jfrog.io</id>
       <username>dreamervineet@gmail.com</username>
-      <password>${env.ARTIFACTORY_PASSWORD}</password>
+      <password>cmVmdGtuOjAxOjE3NjMxMzU1NjI6aVQ3YTFJMnhJVnU3dEJLVnNxMnBBbXN0dE5w</password>
     </server>  
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>${env.ARTIFACTORY_PASSWORD}</password>
+      <password>cmVmdGtuOjAxOjE3NjMxMzU1NjI6aVQ3YTFJMnhJVnU3dEJLVnNxMnBBbXN0dE5w</password>
       <id>central</id>
     </server>
     <server>
       <username>dreamervineet@gmail.com</username>
-      <password>${env.ARTIFACTORY_PASSWORD}</password>
+      <password>cmVmdGtuOjAxOjE3NjMxMzU1NjI6aVQ3YTFJMnhJVnU3dEJLVnNxMnBBbXN0dE5w</password>
       <id>snapshots</id>
     </server>
   </servers>
