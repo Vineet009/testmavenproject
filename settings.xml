@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <id>testcicdvineet.jfrog.io</id>
+      <id>https://testcicdvineet.jfrog.io</id>
       <username>dreamervineet@gmail.com</username>
       <password>${{secret.ARTIFACTORY_PASSWORD}}</password>
     </server>  
