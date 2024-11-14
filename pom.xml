@@ -105,11 +105,11 @@
 	        <name>a0xoo5xoov10c-artifactory-primary-0-releases</name>
 	        <url>https://testcicdvineet.jfrog.io/artifactory/mvn-project-libs-snapshot</url>
 	    </repository>
-	     <snapshotsRepository>
+	     <snapshotRepository>
 	        <id>snapshots</id>
 	        <name>a0xoo5xoov10c-artifactory-primary-0-snapshots</name>
 	        <url>https://testcicdvineet.jfrog.io/artifactory/mvn-project-libs-snapshot</url>
-	    </snapshotsRepository>
+	    </snapshotRepository>
 	</distributionManagement>
 	
 	<build>
